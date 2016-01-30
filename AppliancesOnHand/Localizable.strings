@@ -30,5 +30,6 @@
 "source_hdmi" = "HDMI";
 
 "lcd_viewing_x_channel_mesage" = "กำลังรับชมช่อง %@";
+"lcd_viewing_source_x_mesage" = "กำลังรับชมสัญญานจาก %@";
 "lcd_viewing_turn_off_mesage" = "โทรทัศน์ถูกปิดแล้ว";
 

@@ -67,7 +67,7 @@
 
 -(void)updateScrollViewContentSize
 {
-    self.contentScrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.contentView.frame.size.height);
+    self.contentScrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.contentView.frame.size.height + (8 * 3));
 }
 
 -(void)updateContentSize
@@ -118,11 +118,32 @@
 
 -(void)changeLCDTextMessage
 {
+    
+
+    
     if ( self.remote.isDeviceTurnOn) {
         
         if ( self.remote.connectionState == RemoteConnectionStateConnected) {
             
-            self.lcdTextDemoOnlyLabel.text = [NSString stringWithFormat:NSLocalizedString(@"lcd_viewing_x_channel_mesage", nil), [NSNumber numberWithInteger:self.remote.currentChannel]];
+            
+            if ( self.remote.connectionSource == RemoteSourceInternal ) {
+                
+                self.lcdTextDemoOnlyLabel.text = [NSString stringWithFormat:NSLocalizedString(@"lcd_viewing_x_channel_mesage", nil), [NSNumber numberWithInteger:self.remote.currentChannel]];
+            }
+            
+            if ( self.remote.connectionSource == RemoteSourceAV ) {
+                
+                self.lcdTextDemoOnlyLabel.text = [NSString stringWithFormat:NSLocalizedString(@"lcd_viewing_source_x_mesage", nil), @"AV"];
+            }
+            if ( self.remote.connectionSource == RemoteSourceComponent ) {
+                
+                self.lcdTextDemoOnlyLabel.text = [NSString stringWithFormat:NSLocalizedString(@"lcd_viewing_source_x_mesage", nil), @"Component"];
+            }
+            if ( self.remote.connectionSource == RemoteSourceHDMI ) {
+                
+                self.lcdTextDemoOnlyLabel.text = [NSString stringWithFormat:NSLocalizedString(@"lcd_viewing_source_x_mesage", nil), @"HDMI"];
+            }
+            
         }
         else
         {
@@ -170,6 +191,8 @@
             break;
     }
     self.sourceMessage.text = [NSString stringWithFormat:NSLocalizedString(@"source_mesage", nil), soureName];
+    
+    [self changeLCDTextMessage];
 }
 
 
