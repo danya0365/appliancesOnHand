@@ -112,6 +112,8 @@
     }
     
     self.statusMessage.text = message;
+    
+    [self changeLCDTextMessage];
 }
 
 -(void)changeLCDTextMessage
