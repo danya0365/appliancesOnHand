@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRScanNotFoundViewController">
+            <connections>
+                <outlet property="confirmButton" destination="YoL-26-lg8" id="lCq-NO-0Aq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wrapperView" destination="Hy0-iD-Hmg" id="gEs-Co-Txj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hy0-iD-Hmg">
+                    <rect key="frame" x="160" y="232" width="280" height="137"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ไม่สามารถสแกน QR Code รูปแบบนี้ได้" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2u-We-QNH">
+                            <rect key="frame" x="-6" y="8" width="292" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="p07-KD-ccU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoL-26-lg8">
+                            <rect key="frame" x="28" y="84" width="224" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="LFR-7U-pHw"/>
+                                <constraint firstAttribute="width" constant="224" id="Yug-0F-qiz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="ยอมรับ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmButtonAction:" destination="-1" eventType="touchUpInside" id="xF7-gZ-Vdb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="K2u-We-QNH" firstAttribute="centerX" secondItem="Hy0-iD-Hmg" secondAttribute="centerX" id="5Ds-vV-xNJ"/>
+                        <constraint firstItem="YoL-26-lg8" firstAttribute="centerX" secondItem="K2u-We-QNH" secondAttribute="centerX" id="Gwe-Eh-0xV"/>
+                        <constraint firstAttribute="width" constant="280" id="HkZ-kq-c2R"/>
+                        <constraint firstItem="K2u-We-QNH" firstAttribute="top" secondItem="Hy0-iD-Hmg" secondAttribute="top" constant="8" id="PSf-nz-xUJ"/>
+                        <constraint firstAttribute="trailing" secondItem="K2u-We-QNH" secondAttribute="trailing" constant="8" id="QtL-39-siU"/>
+                        <constraint firstItem="K2u-We-QNH" firstAttribute="leading" secondItem="Hy0-iD-Hmg" secondAttribute="leading" constant="8" id="YF8-Qg-HRR"/>
+                        <constraint firstItem="YoL-26-lg8" firstAttribute="top" secondItem="K2u-We-QNH" secondAttribute="bottom" constant="16" id="ZgQ-x1-l89"/>
+                        <constraint firstAttribute="bottom" secondItem="YoL-26-lg8" secondAttribute="bottom" constant="8" id="d1K-BW-2su"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Hy0-iD-Hmg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TeR-y9-me8"/>
+                <constraint firstItem="Hy0-iD-Hmg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yqz-Fb-2Gi"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

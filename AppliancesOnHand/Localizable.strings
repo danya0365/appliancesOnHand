@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  bike2day
+
+  Created by DEVTAB_006 on 12/25/2558 BE.
+  Copyright © 2558 DEVTAB_006. All rights reserved.
+*/
+
+"application_home_title" = "ควบคุมเครื่องใช้ไฟฟ้า";
+
+"television_name" = "โทรทัศน์";
+"radio_name" = "วิทยุ";
+"air_conditioner_name" = "แอร์";
+"brand_title" = "แบรนด์";
+
+"lg" = "LG";
+"sony" = "Sony";
+"samsung" = "Samsung";
+
+
+"back_menu_title" = "กลับ";
+"close_menu_title" = "ปิด";
+
+"channel_mesage" = "ช่อง %@";
+"volumn_mesage" = "ระดับความดังเสียง: %@";
+"source_mesage" = "สัญญานภาพจาก: %@";
+"source_antenna" = "เสาอากาศ";
+"source_av" = "AV";
+"source_component" = "Component";
+"source_hdmi" = "HDMI";
+
+"lcd_viewing_x_channel_mesage" = "กำลังรับชมช่อง %@";
+"lcd_viewing_turn_off_mesage" = "โทรทัศน์ถูกปิดแล้ว";
+
